@@ -1,7 +1,3 @@
-//Materials
-// https://www.gormanalysis.com/blog/reading-and-writing-csv-files-with-cpp/
-// https://www.geeksforgeeks.org/vector-in-cpp-stl/
-// https://www.geeksforgeeks.org/pair-in-cpp-stl/
 #include <iostream>
 #include <vector>
 #include <string>
