@@ -1,5 +1,4 @@
 //Validate the solution of self-driving-rides algorithm 
-
 //input/output 
 #include <iostream>
 #include <sstream>
