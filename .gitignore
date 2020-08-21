@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+
+#batch files
+*.bat
+
+#text editor
+*.sublime*
+
+#make exe
+libiconv2.dll
+libintl3.dll
+make.exe
