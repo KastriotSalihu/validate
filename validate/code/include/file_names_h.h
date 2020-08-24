@@ -4,6 +4,8 @@
 #include <string>
 
 struct file_names{
+	//Goals:
+	//Store file names and paths
 	std::string instance_name;
 	std::string instance_path;
 	std::string solution_path;

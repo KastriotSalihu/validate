@@ -6,17 +6,19 @@
 #include "file_names_h.h"
 
 struct data_set {
+	//Goals:
+	//Store instance and solution
+	//Verify the solution is correct
 	int R, C, F, N, B, T;
 
 	std::vector<ride*> rides;  //load instance
 	std::map<int, std::vector<ride*>> fleets; //load solution
 
-	std::string instance; 	//path to instance file
-	std::string solution;	//path to solution file
+	std::string instance;
+	std::string solution;
 
 	errors error_check;
 
-	// initialize the variables
 	data_set(file_names files);
 
 	std::vector<int> split_string_to_ints(std::string line);
@@ -35,10 +37,9 @@ struct data_set {
 	std::string travel(ride* current_ride, int &vehicle_position_row,
 				 int &vehicle_position_col, int &elapsed_time, int &score);
 
-	// Main function
-	// Does the traveling of all the rides assigned to all the vehicles
-	// Keeps score for the points collected by the vehicles
-	// Indicates possible non-optimal rides assigned
+	// Main function to call
+	// Travels all the rides assigned to all the vehicles
+	// Keeps score, Indicates any non-optimal rides assigned
 	void verify();
 };
 

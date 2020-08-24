@@ -11,28 +11,23 @@
 
 using namespace std;
 
-
 int main(int argc, char* argv[]) {
 	if(argc == 1){
 		cerr <<"ERROR \nUsage: validate <filename>\n";
 		exit(EXIT_FAILURE);
 	}
-
-	//get the names of the files from the arguments of the call
+	
 	file_names files(argv[1]);
-
-	//pass the file names to the data set
 	data_set d1(files);
 
 	d1.verify();
+	d1.error_check.print_summary();
 
 	char input;
 	cout <<"\nWould you like to see a more detailed description of errors? ";
 	cin >>input;
-	if(i=='y'){
-		d1.error_check.see_errors();
+	if(input=='y'){
+		d1.error_check.print_all_errors();
 	}
-
-	//print_map(d1.fleets);
 	return 0;
 }

@@ -5,6 +5,8 @@
 #include <vector>
 
 struct ride {
+	//Goals:
+	//Store ride information
 	int a, b, x, y, s, f;
 	std::vector<ride*> close_next_rides;
 
