@@ -1,7 +1,7 @@
 # Validate self driving rides
 Validate the outputs of **sdr_algorithm**
 
-##Usage:
+## Usage:
 Place in the parent directory of "**solution/**" and "**dataset/**".
 Call using the name of the instance to check the solution of.
 
