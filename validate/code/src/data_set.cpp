@@ -9,6 +9,7 @@
 //helper functions such as abs()
 #include <math.h>
 #include "../include/data_set_h.h"
+#include "../include/global_variables_h.h"
 
 using namespace std;
 
@@ -156,11 +157,9 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 			//only rides completed before or at the same time as latest finish time count
 			if(elapsed_time <= current_ride->f) {
 				score += distance(starting_position, ending_postion);  //SCORE KEEP
-				if(bonus){
+				if(bonus)
 					score += B;		//SCORE KEEP
-				}
 			}
-
 			else 
 				throw '2';
 		}
@@ -185,15 +184,17 @@ void data_set::verify(){
 		<<"\n=====================\n";
 	//traverse the entire fleet of type map<int, vector<ride*>>
 	for(auto map_iterator = fleets.begin(); map_iterator != fleets.end(); map_iterator++){
-		cout<< "\n\t\t\tVehicle number: " << map_iterator->first << endl <<endl;
+		if(debug)
+			cout<< "\n\t\t\tVehicle number: " << map_iterator->first << endl <<endl;
 
 		//at time 0 vehicle starts from the position (0,0)
 		int vehicle_position_row = 0;
 		int vehicle_position_col = 0;
 		int elapsed_time = 0;
 
-		cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
-			<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
+		if(debug)
+			cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
+				<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
 
 		//Keep track of the index of the ride for error output formatting
 		int current_ride_index = 1; // INITIAL VALUE
@@ -204,9 +205,9 @@ void data_set::verify(){
 			 				elapsed_time, score);
 			if(status != "")
 				error_check.record_travel_errors(status, map_iterator->first, current_ride_index);
-
-			cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
-				<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
+			if(debug)
+				cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
+					<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
 
 			current_ride_index++;
 		}

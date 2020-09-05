@@ -9,13 +9,16 @@
 #include "../include/data_set_h.h"
 #include "../include/file_names_h.h"
 #include "../include/imported_functions_h.h"
-
+#include "../include/global_variables_h.h"
 using namespace std;
 
 int main(int argc, char* argv[]) {
 	if(argc == 1){
 		cerr <<"ERROR \nUsage: validate <filename>\n";
 		exit(EXIT_FAILURE);
+	}
+	if(argc >2){
+		debug = true;
 	}
 	
 	file_names files(argv[1]);
