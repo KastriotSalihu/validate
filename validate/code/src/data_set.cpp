@@ -4,6 +4,8 @@
 #include <sstream>
 #include <fstream>
 #include <iomanip>
+//exit()
+#include <stdlib.h> 
 //helper functions such as abs()
 #include <math.h>
 #include "../include/data_set_h.h"
@@ -87,6 +89,10 @@ void data_set::read_solution_file(string solution){
 		}
 		wf.close();
 	}
+	else{
+		cerr<<"\n\nCould not open solution file!\n\n";
+		exit(EXIT_FAILURE);
+	}
 }
 void data_set::process_solution_lines(string line, int line_number) {
 	vector<int> values = split_string_to_ints(line);
@@ -135,7 +141,7 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 
 	// vehicle is now at the starting point
 
-	 //wait until earliest start time
+	//wait until earliest start time
 	if(elapsed_time < current_ride->s)
 		elapsed_time += (current_ride->s - elapsed_time); 
 
@@ -186,10 +192,8 @@ void data_set::verify(){
 		//Keep track of the index of the ride for error output formatting
 		int current_ride_index = 1; // INITIAL VALUE
 
-		// traverse through all the rides of the current vehicle
 		for(ride *current_ride : map_iterator->second){
 			if(elapsed_time >= T) break;  
-			//start this ride
 			status = travel(current_ride, vehicle_position_row, vehicle_position_col,
 			 				elapsed_time, score);
 			if(status != "")
@@ -202,4 +206,5 @@ void data_set::verify(){
 		}
 	}
 	cout<<"\nPoints collected: " << score << endl;
+	this->score = score;
 }

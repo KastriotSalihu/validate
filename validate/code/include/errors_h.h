@@ -27,6 +27,7 @@ struct errors {
 		{'t', std::make_pair("    Contains trailing non eol whitespace!\n", 0)},
 		{'N', std::make_pair("    Number of assigned rides must be positive and smaller or equal the number of all rides!\n", 0)},
 		{'n', std::make_pair("    The number of rides is different than declared!\n", 0)},
+		{'c', std::make_pair("    Line contains letters or symbols!\n", 0)},
 		{'u', std::make_pair("    Ride has already been assigned!\n", 0)},
 		{'e', std::make_pair("    Ride does not/cannot exist!\n", 0)},
 		{'1', std::make_pair("    Elapsed time before ride is greater than latest finish time!\n", 0)},
@@ -44,7 +45,8 @@ struct errors {
 	// ======================== TEST SOLUTION FILE FORMAT ERRORS ===================
 	bool test_solution_format(std::string &line, int line_number, const std::vector<int> &values);
 	void whitespace(std::string line, std::string &status);
-	void number_of_rides(const std::vector<int> &values, std::string &status);
+	void number_of_rides(std::string line, const std::vector<int> &values, std::string &status);
+	void check_characters(std::string line, std::string &status);
 	void uniqueness(const std::vector<int> &values, int &ride_index, std::string &status);
 	// ============================== PRINT ERRORS DETECTED ======================== 
 	void print_solution_errors(std::string status, int line_number, int ride_index);

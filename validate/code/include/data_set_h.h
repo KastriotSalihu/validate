@@ -19,6 +19,8 @@ struct data_set {
 
 	errors error_check;
 
+	int score;
+
 	data_set(file_names files);
 
 	std::vector<int> split_string_to_ints(std::string line);

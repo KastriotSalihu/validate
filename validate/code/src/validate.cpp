@@ -8,6 +8,7 @@
 #include "../include/ride_h.h"
 #include "../include/data_set_h.h"
 #include "../include/file_names_h.h"
+#include "../include/imported_functions_h.h"
 
 using namespace std;
 
@@ -29,5 +30,11 @@ int main(int argc, char* argv[]) {
 	if(input=='y'){
 		d1.error_check.print_all_errors();
 	}
+
+	Score score1(files);
+	int  score_1= get_score(d1, score1.fleets);
+	cout <<"\nscore_1: "<<score_1<<endl;
+	cout<<"\nscore_2: "<<d1.score<<endl;
+
 	return 0;
 }
