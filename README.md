@@ -12,7 +12,7 @@ Or if you prefer more details:
 **validate a_example details**
 
 Executable file:
+[validate.exe](https://drive.google.com/drive/folders/1A3rIOOgUCSQNsuVkaYYRYdEwUdahwIIy?usp=sharing)
 
-<a href="https://drive.google.com/drive/folders/1A3rIOOgUCSQNsuVkaYYRYdEwUdahwIIy?usp=sharing target="_blank">validate.exe</a>
 For more information on the project visit:
 https://github.com/ksylejmani/Self-driving-rides
