@@ -123,6 +123,7 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 	pair<int, int> starting_position = current_ride->starting_position();
 	pair<int, int> ending_postion = current_ride->ending_postion();
 	string status = ""; //Empty string indicates no errors
+	bool bonus = false;
 	
 	try{
 		if(elapsed_time > current_ride->f)
@@ -146,15 +147,20 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 		elapsed_time += (current_ride->s - elapsed_time); 
 
 	if(elapsed_time >= current_ride->s){
-		if(elapsed_time == current_ride->s)		
-			score += B;		//SCORE KEEP
+		if(elapsed_time == current_ride->s)	
+			bonus = true;	
 		//do the ride
 		elapsed_time += distance(current_position, ending_postion);
 		current_position = ending_postion;
 		try{
 			//only rides completed before or at the same time as latest finish time count
-			if(elapsed_time <= current_ride->f) 
+			if(elapsed_time <= current_ride->f) {
 				score += distance(starting_position, ending_postion);  //SCORE KEEP
+				if(bonus){
+					score += B;		//SCORE KEEP
+				}
+			}
+
 			else 
 				throw '2';
 		}
