@@ -6,12 +6,12 @@
 #include <stdexcept> // std::runtime_error
 #include <math.h>
 #include <iostream>
+#include <time.h> //clock_t, clock, CLOCKS_PER_SEC 
 
 #include "imported_functions_h.h"
 #include "data_set_h.h"
 
 using namespace std;
-
 
 vector<int> Score::split_string_to_ints(string line) {
 	stringstream ss_line(line);
@@ -35,14 +35,14 @@ void Score::read_solution_file(string solution){
 		while (getline(wf, line)) {
 			try{process_solution_lines(line, line_number);}
 			catch(int error){
-				cerr << "\n\nError reading file, Line number: "<< line_number<<"\n\n";
+				cout << "\n\nError reading file, Line number: "<< line_number<<"\n\n";
 			}
 			line_number++;
 		}
 		wf.close();
 	}
 	else{
-		cerr<<"\n\nCould not open solution file!\n\n";
+		cout<<"\n\nCould not open solution file!\n\n";
 		exit(EXIT_FAILURE);
 	}
 }
@@ -68,7 +68,7 @@ int get_score(data_set ds, map<int, vector<int>> fleets) {// To be done by Erlis
 		pair<int, int> position(0, 0); // Starting position of each vehicle
 		int step = 0; // The starting step for each vehicle
 
-		for (int j = 1; j < it->second.size(); j++) // Iterate for each ride of the current vehicle
+		for (size_t j = 1; j < it->second.size(); j++) // Iterate for each ride of the current vehicle
 		{
 			int ride_score = 0; // Contains the score of the current ride
 			int nr_of_current_ride = it->second[j];
@@ -101,8 +101,10 @@ int get_score(data_set ds, map<int, vector<int>> fleets) {// To be done by Erlis
 
 		fundi:
 			vehicle_score += ride_score;
+			cout<<ride_score<<" t: "<<step<<endl;
 		}
 		result += vehicle_score;
+		cout<<result<<"======================"<<distance(fleets.begin(), it)<<" t: "<<step<< endl;
 	}
 	// Test your function by using both solutions of Enes and Lendrit
 	return result;

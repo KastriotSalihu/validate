@@ -54,7 +54,7 @@ void errors::number_of_rides(string line, const vector<int> &values, string &sta
 		error_message['N'].second++;
 		status.push_back('N');
 	}
-	if(values[0] != values.size()-1){
+	if((size_t)values[0] != values.size()-1){
 		error_message['n'].second++;
 		status.push_back('n');
 		check_characters(line, status);
@@ -96,21 +96,21 @@ void errors::uniqueness(const vector<int> &values,int &ride_index, string &statu
 
 //report the errors that have been detected from reading the solution file
 void errors::print_solution_errors(string status, int line_number, int ride_index){
-	cerr <<"HARD ERROR:\n  Line number: " << line_number;
-	if(ride_index != -1)	cerr <<"  \tRide number: " << ride_index <<endl;
-	else cerr <<endl;
+	cout <<"HARD ERROR:\n  Line number: " << line_number;
+	if(ride_index != -1)	cout <<"  \tRide number: " << ride_index <<endl;
+	else cout <<endl;
 	print_status(status);
 }
 //report the errors that have been detected from traveling the rides
 void errors::print_travel_errors(string status, int vehicle_number, int current_ride_index){
-	cerr <<"ERROR:\n  Vehicle number: " << vehicle_number;
-	cerr<<"  \tRide number: " <<current_ride_index << endl;
+	cout <<"ERROR:\n  Vehicle number: " << vehicle_number;
+	cout<<"  \tRide number: " <<current_ride_index << endl;
 	print_status(status);
 }
 //print the appropriate error message
 void errors::print_status(string status){
 for(char error : status){
-	cerr << error_message[error].first;
+	cout << error_message[error].first;
 	}
 }
 // =========================================== ERRORS =========================
@@ -136,10 +136,10 @@ void errors::print_all_errors(){
 void errors::print_summary(){
 	cout<<"\nTotal lines with errors reading solution file: "<<solution_file_errors.size()<<endl;
 	for(auto iter = error_message.begin(); iter != error_message.find('1'); iter++){
-		cerr << iter->second.second << iter->second.first;
+		cout << iter->second.second << iter->second.first;
 	}
 	cout<<"\nTotal rides with errors during the travel: "<<travel_errors.size()<<endl;
 	for(auto iter = error_message.find('1'); iter != error_message.end(); iter++){
-		cerr << iter->second.second << iter->second.first;
+		cout << iter->second.second << iter->second.first;
 	}
 }

@@ -4,6 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include <iomanip>
+#include <time.h> //clock_t, clock, CLOCKS_PER_SEC 
 //exit()
 #include <stdlib.h> 
 //helper functions such as abs()
@@ -20,10 +21,10 @@ bool operator!=(pair<int&, int&> lhs, pair<int, int> rhs){
 	return !(lhs.first == rhs.first and lhs.second == rhs.second);
 }
 
-data_set::data_set(file_names files) {
+data_set::data_set(file_names files) 
+	: instance(files.instance_path), solution(files.solution_path)
+{
 	//initialize the file names and paths
-	instance = files.instance_path;
-	solution = files.solution_path;
 
 	// Read and place the data from the files into the respective variables and arrays  
 	read_instance_file(instance);
@@ -84,14 +85,14 @@ void data_set::read_solution_file(string solution){
 				process_solution_lines(line, line_number);
 			}
 			catch(int error){
-				cerr << "\n\nError reading file, Line number: "<< line_number<<"\n\n";
+				cout << "\n\nError reading file, Line number: "<< line_number<<"\n\n";
 			}
 			line_number++;
 		}
 		wf.close();
 	}
 	else{
-		cerr<<"\n\nCould not open solution file!\n\n";
+		cout<<"\n\nCould not open solution file!\n\n";
 		exit(EXIT_FAILURE);
 	}
 }
@@ -103,7 +104,7 @@ void data_set::process_solution_lines(string line, int line_number) {
 
 	vector<ride*> current_vehicle_rides;
 	//transform from the index of the ride to the actual ride
-	for(int i = 1; i <= values.size()-1; i++)
+	for(size_t i = 1; i < values.size(); i++)
 		current_vehicle_rides.push_back(rides[values[i]]);
 
 	//(here line_number indicates the index of the vehicle)
@@ -125,6 +126,7 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 	pair<int, int> ending_postion = current_ride->ending_postion();
 	string status = ""; //Empty string indicates no errors
 	bool bonus = false;
+	int temp = score;
 	
 	try{
 		if(elapsed_time > current_ride->f)
@@ -168,6 +170,7 @@ string data_set::travel(ride* current_ride, int &vehicle_position_row, int &vehi
 			status.push_back(error);
 		}
 	}
+	cout<<score - temp<<" time: "<<elapsed_time<<endl;
 	return status;
 }
 
@@ -182,19 +185,19 @@ void data_set::verify(){
 	cout<<"\n=====================\n"
 		<<"|Traveling the rides|"
 		<<"\n=====================\n";
+
 	//traverse the entire fleet of type map<int, vector<ride*>>
 	for(auto map_iterator = fleets.begin(); map_iterator != fleets.end(); map_iterator++){
-		if(debug)
-			cout<< "\n\t\t\tVehicle number: " << map_iterator->first << endl <<endl;
-
 		//at time 0 vehicle starts from the position (0,0)
 		int vehicle_position_row = 0;
 		int vehicle_position_col = 0;
 		int elapsed_time = 0;
 
-		if(debug)
-			cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
+		if(debug){
+			cout<< "\n\t\t\tVehicle number: " << map_iterator->first << endl <<endl;
+			cout<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
 				<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
+			}
 
 		//Keep track of the index of the ride for error output formatting
 		int current_ride_index = 1; // INITIAL VALUE
@@ -206,11 +209,13 @@ void data_set::verify(){
 			if(status != "")
 				error_check.record_travel_errors(status, map_iterator->first, current_ride_index);
 			if(debug)
-				cerr<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
+				cout<<"Position: ("<<vehicle_position_row<<", "<<vehicle_position_col
 					<<") score: "<<score <<" elapsed time: "<<elapsed_time<<endl;
 
 			current_ride_index++;
 		}
+		cout<<score<<"=========="<<map_iterator->first<<" time: "<< elapsed_time<<endl;
+
 	}
 	cout<<"\nPoints collected: " << score << endl;
 	this->score = score;

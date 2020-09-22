@@ -11,7 +11,7 @@ struct file_names{
 	std::string solution_path;
 
 	file_names(){}
-	file_names(std::string _instance_name);
+	file_names(std::string);
 };
 
 #endif
