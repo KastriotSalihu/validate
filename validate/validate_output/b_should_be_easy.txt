@@ -1,0 +1,806 @@
+Instance name: b_should_be_easy
+
+
+Error reading file, Line number: 89
+
+
+=====================
+|Traveling the rides|
+=====================
+
+Points collected: 101875
+
+Total lines with errors reading solution file: 100
+
+Total rides with errors during the travel: 121
+108    Elapsed time before ride is greater than latest finish time!
+121    Elapsed time after finish is greater than latest finish time!
+0    Number of assigned rides must be positive and smaller or equal the number of all rides!
+0    Line contains letters or symbols!
+0    Ride does not/cannot exist!
+0    The number of rides is different than declared!
+100    Contains trailing non eol whitespace!
+1    Ride has already been assigned!
+0    Contains double whitespaces!
+
+Would you like to see a more detailed description of errors?  
+ ---------------------------Errors reading solution file: 
+Total errors : 100
+HARD ERROR:
+  Line number: 1
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 2
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 3
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 4
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 5
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 6
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 7
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 8
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 9
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 10
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 11
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 12
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 13
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 14
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 15
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 16
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 17
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 18
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 19
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 20
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 21
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 22
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 23
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 24
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 25
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 26
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 27
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 28
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 29
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 30
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 31
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 32
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 33
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 34
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 35
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 36
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 37
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 38
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 39
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 40
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 41
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 42
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 43
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 44
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 45
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 46
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 47
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 48
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 49
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 50
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 51
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 52
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 53
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 54
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 55
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 56
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 57
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 58
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 59
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 60
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 61
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 62
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 63
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 64
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 65
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 66
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 67
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 68
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 69
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 70
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 71
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 72
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 73
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 74
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 75
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 76
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 77
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 78
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 79
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 80
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 81
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 82
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 83
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 84
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 85
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 86
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 87
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 88
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 89  	Ride number: 108
+    Contains trailing non eol whitespace!
+    Ride has already been assigned!
+HARD ERROR:
+  Line number: 90
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 91
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 92
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 93
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 94
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 95
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 96
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 97
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 98
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 99
+    Contains trailing non eol whitespace!
+HARD ERROR:
+  Line number: 100
+    Contains trailing non eol whitespace!
+ ---------------------------Errors traveling the rides: 
+Total errors : 121
+ERROR:
+  Vehicle number: 1  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 1  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 2  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 3  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 3  	Ride number: 5
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 4  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 5  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 5  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 8  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 8  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 9  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 11  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 11  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 12  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 14  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 16  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 16  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 17  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 17  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 18  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 19  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 20  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 20  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 21  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 22  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 23  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 24  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 24  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 25  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 25  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 25  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 26  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 27  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 27  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 28  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 28  	Ride number: 5
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 29  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 29  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 30  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 31  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 32  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 32  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 34  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 35  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 35  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 35  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 37  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 40  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 40  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 40  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 41  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 41  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 42  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 42  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 42  	Ride number: 5
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 43  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 43  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 44  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 45  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 46  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 46  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 47  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 47  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 48  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 49  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 49  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 50  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 52  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 52  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 54  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 55  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 56  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 57  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 57  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 58  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 61  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 62  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 62  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 63  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 64  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 65  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 66  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 67  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 68  	Ride number: 2
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 68  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 70  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 73  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 74  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 74  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 75  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 77  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 78  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 79  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 80  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 80  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 82  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 82  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 82  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 83  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 83  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 83  	Ride number: 5
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 85  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 86  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 86  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 86  	Ride number: 5
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 87  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 87  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 90  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 91  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 92  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 92  	Ride number: 3
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 92  	Ride number: 4
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 92  	Ride number: 5
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 93  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 93  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 94  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 95  	Ride number: 2
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 95  	Ride number: 4
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 96  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 98  	Ride number: 3
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+ERROR:
+  Vehicle number: 100  	Ride number: 2
+    Elapsed time before ride is greater than latest finish time!
+    Elapsed time after finish is greater than latest finish time!
+
+score_1: 102659
+
+score_2: 101875

@@ -1,0 +1,30 @@
+Instance name: e_high_bonus
+
+=====================
+|Traveling the rides|
+=====================
+
+Points collected: 4460419
+
+Total lines with errors reading solution file: 0
+
+Total rides with errors during the travel: 0
+0    Elapsed time before ride is greater than latest finish time!
+0    Elapsed time after finish is greater than latest finish time!
+0    Number of assigned rides must be positive and smaller or equal the number of all rides!
+0    Line contains letters or symbols!
+0    Ride does not/cannot exist!
+0    The number of rides is different than declared!
+0    Contains trailing non eol whitespace!
+0    Ride has already been assigned!
+0    Contains double whitespaces!
+
+Would you like to see a more detailed description of errors? 
+ ---------------------------Errors reading solution file: 
+Total errors : 0
+ ---------------------------Errors traveling the rides: 
+Total errors : 0
+
+score_1: 4460419
+
+score_2: 4460419

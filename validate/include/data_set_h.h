@@ -1,9 +1,10 @@
 #ifndef DATA_SET_H
 #define DATA_SET_H
 
-#include "ride_h.h"
 #include "errors_h.h"
-#include "file_names_h.h"
+
+struct ride;
+struct file_names;
 
 struct data_set {
 	//Goals:

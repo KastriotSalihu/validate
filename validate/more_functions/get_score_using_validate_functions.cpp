@@ -19,7 +19,6 @@ void verify(unordered_map<int, vector<ride*>> fleets){
 	cout<<"\nPoints collected: " << score << endl;
 }
 
-
 void travel(ride* current_ride, int &vehicle_position_row, int &vehicle_position_col, int &elapsed_time, int &score){
 
 	pair<int&, int&> current_position(vehicle_position_row, vehicle_position_col);

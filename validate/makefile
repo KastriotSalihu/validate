@@ -1,24 +1,20 @@
 CXX := g++
-CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb
+CXX_FLAGS := -Wall -static-libgcc -static-libstdc++ -Wextra -std=c++17 -ggdb
 
-BIN 		:= ../
+BIN 		:= 
 SRC 		:= src
 INCLUDE 	:= INCLUDE
 LIB 		:= lib
 LIBRARIES 	:=
 EXECUTABLE 	:= validate
 
-all: $(BIN)/$(EXECUTABLE)
+all: $(EXECUTABLE)
 run: clear all
 	clear
 	@echo "Executing..."
-	./$(BIN)/$(EXECUTABLE)
+	$(EXECUTABLE)
 
 
-$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
+$(EXECUTABLE): $(SRC)/*.cpp
 	@echo "Building..."
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
-
-clean:
-	@echo "Clearing..."
-	-rm $(BIN)/*
