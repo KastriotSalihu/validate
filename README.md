@@ -1,5 +1,5 @@
 # Validate self driving rides
-Validate the outputs of **sdr_algorithm**
+Validate the output of **sdr_algorithm**
 
 ## Usage:
 Place in the parent directory of "**solution/**" and "**dataset/**".
