@@ -37,8 +37,8 @@ int main(int argc, char* argv[]) {
 
 	Solution solution1(files);
 	int  score_1= get_score(d1, solution1.fleets);
-	cout <<"\nscore_1: "<<score_1<<endl;
-	cout<<"\nscore_2: "<<d1.score<<endl;
+	cout <<"\nScore if no errors were detected: "<<score_1<<endl;
+	cout<<"\nReal score (after validation): "<<d1.score<<endl;
 	
 	return 0;
 }

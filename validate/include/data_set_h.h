@@ -31,11 +31,12 @@ struct data_set {
 	void process_ride_lines(std::string line);
 
 	void read_solution_file(std::string solution);
-	void process_solution_lines(std::string line, int line_number);
+	bool process_solution_lines(std::string line, int line_number);
 
 	//helper functions to travel
 	int distance(std::pair<int, int> lhs, std::pair<int, int> rhs);
 	int distance(std::pair<int&, int&> lhs, std::pair<int, int> rhs);
+
 	//travels a given ride
 	std::string travel(ride* current_ride, int &vehicle_position_row,
 				 int &vehicle_position_col, int &elapsed_time, int &score);

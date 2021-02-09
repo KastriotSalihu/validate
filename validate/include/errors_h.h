@@ -7,12 +7,15 @@
 #include <vector>
 #include <set>
 
-
-struct errors {
+struct errors
+{
 	//Goals:
 	//Check for solution file formatting
 	//Record all errors
 	//Print summary and detailed errors
+
+	errors(int N) : N(N) {}
+	int N; //total number of rides
 
 	std::set<int> assigned_rides;
 
@@ -31,32 +34,32 @@ struct errors {
 		{'u', std::make_pair("    Ride has already been assigned!\n", 0)},
 		{'e', std::make_pair("    Ride does not/cannot exist!\n", 0)},
 		{'1', std::make_pair("    Elapsed time before ride is greater than latest finish time!\n", 0)},
-		{'2', std::make_pair("    Elapsed time after finish is greater than latest finish time!\n", 0)}
-	};
+		{'2', std::make_pair("    Elapsed time after finish is greater than latest finish time!\n", 0)}};
 
-	int N; //total number of rides
-	void set_N(int _N){	N = _N;	}
+	void count_error(char);
 
 	//helper function to simplify recording errors from ride travel
-	void record_travel_errors(std::string status, int vehicle_number, int current_ride_index){
-		travel_errors[std::make_pair(vehicle_number,current_ride_index)] =  status;
+	void record_travel_errors(std::string status, int vehicle_number, int current_ride_index)
+	{
+		travel_errors[std::make_pair(vehicle_number, current_ride_index)] = status;
 	}
 
 	// ======================== TEST SOLUTION FILE FORMAT ERRORS ===================
 	bool test_solution_format(std::string &line, int line_number, const std::vector<int> &values);
-	void whitespace(std::string line, std::string &status);
-	void number_of_rides(std::string line, const std::vector<int> &values, std::string &status);
-	void check_characters(std::string line, std::string &status);
-	void uniqueness(const std::vector<int> &values, int &ride_index, std::string &status);
-	// ============================== PRINT ERRORS DETECTED ======================== 
+	std::string check_whitespace(std::string line);
+	std::string check_number_of_rides(std::string line, const std::vector<int> &values);
+	std::string check_characters(std::string line);
+	std::string check_uniqueness(const std::vector<int> &values, int &ride_index);
+
+	// ============================== PRINT ERRORS DETECTED ========================
 	void print_solution_errors(std::string status, int line_number, int ride_index);
 	void print_travel_errors(std::string status, int vehicle_number, int current_ride_index);
 	// Read status and print appropriate errors
 	void print_status(std::string status);
 	void print_summary();
+
 	// Main function
 	void print_all_errors();
 };
-
 
 #endif
